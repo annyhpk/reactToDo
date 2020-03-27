@@ -1,7 +1,9 @@
 import { Input, Button } from 'antd';
 import styled from 'styled-components';
-import 'antd/dist/antd.less';
 
+export const P = styled.p`
+    text-align: center;
+`;
 
 export const A = styled.a`
     margin-top: 75px;
@@ -31,9 +33,8 @@ export const StyledSubmitButton = styled(Button)`
 `;
 
 export const Form = styled.form`
-    width: 11.5em;
     display: flex;
-    flex-direction: row;
+    width: 12em;
 `;
 
 export const Div = styled.div`
@@ -45,7 +46,6 @@ export const Div = styled.div`
     font-size: 1.8em;
     align-items: center;
     justify-content: center;
-    height: 100%;
 `;
 
 export const ToDoListDiv = styled.div`

@@ -5,7 +5,7 @@ import React, {
     useCallback
 } from 'react';
 import {
-    A, 
+    P, A, 
     StyledInput, 
     StyledButton, 
     StyledSubmitButton, 
@@ -107,9 +107,9 @@ const Todo = memo(() => {
 
     return (
       <>
-      <GlobalStyle />       
-        <Div>
-            <A href='/'>Todo List</A>
+      <GlobalStyle />
+      <P><A href='https://annyhpk.github.io/reactToDo/'>Todo List</A></P>
+        <Div>  
             <Form onSubmit={addToDo}>
                 <StyledInput
                     ref={inputRef}

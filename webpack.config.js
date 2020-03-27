@@ -2,8 +2,8 @@ const path = require('path');
 
 module.exports = {
     name: 'Todo-List',
-    mode: 'development',
-    devtool: 'eval',
+    mode: 'production',
+    devtool: 'source-map',
     resolve: {
         extensions: ['.js', '.jsx']
     },
