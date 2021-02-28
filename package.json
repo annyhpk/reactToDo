@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack serve --hot"
+    "dev": "webpack serve --hot",
+    "build": "webpack"
   },
   "author": "chanto11",
   "license": "MIT",
