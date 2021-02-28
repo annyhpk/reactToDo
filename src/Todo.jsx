@@ -10,7 +10,7 @@ import {
   ToDoListDiv,
   ToDoBack,
   StyledFont,
-} from './styles';
+} from './Todo.styles';
 import { createGlobalStyle } from 'styled-components';
 import {
   EnterOutlined,
@@ -20,6 +20,7 @@ import {
 } from '@ant-design/icons';
 import { Button } from 'antd';
 import * as uuid from 'uuid';
+import { hot } from 'react-hot-loader';
 
 const GlobalStyle = createGlobalStyle`
     body {
@@ -74,7 +75,7 @@ const Todo = memo(() => {
   const renderTodo = useCallback(() => {
     return Object.keys(toDos).length === 0
       ? null
-      : Object.keys(toDos).map((ID) => (
+      : Object.keys(toDos).map((ID) => 
           <ToDoListDiv key={ID}>
             <div>
               <Button type="link" onClick={onClickToDoOk.bind(null, ID)}>
@@ -94,7 +95,7 @@ const Todo = memo(() => {
               <CloseSquareTwoTone />
             </StyledButton>
           </ToDoListDiv>
-        ));
+        );
   }, [toDos]);
 
   return (
@@ -124,4 +125,4 @@ const Todo = memo(() => {
   );
 });
 
-export default Todo;
+export default hot(module)(Todo);
