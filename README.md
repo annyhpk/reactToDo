@@ -7,4 +7,4 @@ ant design
 styled components
 </pre>
 
-Demo : https://annyhpk.github.io/reactToDo/
+Demo : https://annyhpk.github.io/reactToDo/index.html
